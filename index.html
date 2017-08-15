@@ -1,0 +1,197 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="style/Untitled-3.css.css" type="text/css" rel="stylesheet">
+<title>首页</title>
+<script  type="text/javascript">
+//设为首页
+function SetHome(obj,url){
+    try{
+        obj.style.behavior='url(#default#homepage)';
+        obj.setHomePage(url);
+    }catch(e){
+        if(window.netscape){
+            try{
+                netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+            }catch(e){
+               
+            }
+        }else{
+            alert("抱歉，您所使用的浏览器无法完成此操作。\n\n您需要手动将【"+url+"】设置为首页。");
+        }
+    }
+}
+//收藏本站
+function AddFavorite(title, url) {
+    try {
+        window.external.addFavorite(url, title);
+    }
+    catch (e) {
+        try {
+            window.sidebar.addPanel(title, url, "");
+        }
+        catch (e) {
+            alert("抱歉，您所使用的浏览器无法完成此操作。\n\n加入收藏失败，请使用Ctrl+D进行添加");
+        }
+    }
+}
+</script>
+</head>
+<body>
+<div class="box">
+  <div class="top">
+    <div class="s">
+      <h1>容城县鑫昌发拉链有限公司</h1>
+      <p>
+      <a href="javascript:void(0);" onclick="SetHome(this,'http://www.xyz.com');">设为首页</a><span>|</span>
+      <a href="javascript:void(0);" onclick="AddFavorite('我的网站',location.href)">加入收藏</a><span>|</span>
+      <a href="contact us.html">联系我们</a>
+      </p>
+      
+      <form class="" action="" method="post" name="sousuo" id="">
+         <input type="text" name="" value="Keywords" style=" width:167px; height:24px; border:1px solid #03F; padding-left:5px;"><!--
+    --><input class="w" type="submit" value="搜索" style=" background-color:#EBE141; color:#000; border:0px; height:26px; width:47px;">
+      </form>
+    </div>
+   
+   <div class="nav1">
+    <div class="nav gwidth">
+         <ul class="clearfix">
+            <li><a href="index.html">网站首页</a></li>
+            <li><a href="about.html">关于我们</a>
+               <ul>
+                  <li><a href="javascript:;">公司简介</a></li>
+                   <li><a href="javascript:;">资质荣誉</a></li>
+                    <li><a href="javascript:;">领导致辞</a></li>
+                     <li><a href="javascript:;">联系我们</a></li>
+               </ul>
+            </li>
+            <li><a href="news.html">新闻资讯</a></li>
+            <li><a href="product.html">产品展示</a></li>
+            <li><a href="succes.html">成功案例</a></li>
+            <li><a href="honor.html">资质荣誉</a></li>
+            <li><a href="message.html">请您留言</a></li>
+            <li><a href="contact us.html">联系我们</a></li>
+         </ul>
+    </div>
+   </div>
+    
+  </div>
+  
+  
+  <div class="banner"></div>
+    
+    
+  <div class="middle gwidth">
+    <div class="a">
+        <div class="aa clearfix">
+           <h3>热销产品</h3>
+          <div class="aaa">
+           <img src="image/a.gif" alt="" title="">
+           <ul class="clearfix">
+              <li><a href="javascript:;">1</a></li>
+              <li><a href="javascript:;">2</a></li>
+              <li><a href="javascript:;">3</a></li>
+              <li><a href="javascript:;">4</a></li>
+              <li><a href="javascript:;">5</a></li>
+           </ul>
+          </div>
+        </div>
+        <div class="ab">
+              <h3>新闻资讯</h3>
+              <ul class="clearfix">
+                 <li><a href="javascript:;"><img src="image/xiaodian.gif" alt="" title="">拉链的规格和型号<span>2016-1-15</span></a></li>
+                 <li><a href="javascript:;"><img src="image/xiaodian.gif" alt="" title="">拉链的功能<span>2016-1-15</span></a></li>
+                 <li><a href="javascript:;"><img src="image/xiaodian.gif" alt="" title="">拉链的材料<span>2016-1-15</span></a></li>
+                 <li><a href="javascript:;"><img src="image/xiaodian.gif" alt="" title="">拉链的包养技巧<span>2016-1-15</span></a></li>
+                 <li><a href="javascript:;"><img src="image/xiaodian.gif" alt="" title="">拉链简单介绍<span>2016-1-15</span></a></li>
+                 <li><a href="javascript:;"><img src="image/xiaodian.gif" alt="" title="">拉链的历史<span>2016-1-15</span></a></li>
+                 <li><a href="javascript:;"><img src="image/xiaodian.gif" alt="" title="">拉链的强力<span>2016-1-15</span></a></li>
+                 <li><img src="image/xiaodian.gif" alt="" title=""></li>
+                 <li><img src="image/xiaodian.gif" alt="" title=""></li>
+              </ul>
+        </div>
+        <div class="ac clearfix">
+           <h3>关于我们</h3>
+           <img src="image/b.gif" alt="" title="">
+           <p>容城县鑫昌发拉链有限公司，主要经营拉链，注册资本万元，公司是河北保定拉链的知名企业，公司坚持诚信、互利，为客户提供最好的服务和最实惠的价格会 [详细介绍]</p>
+        </div>
+    </div>
+    
+    <div class="b">
+        <div class="ba">
+           <h3 class="lian">联系我们</h3>
+           <h3 class="rong">容城县鑫昌发拉链有限公司</h3>
+           <ul class="clearfix">
+              <li>联系人：高经理</li>
+              <li>电　话：0312-5439528</li>
+              <li>手　机：15933788166</li>
+              <li>传　真：0312-5439368</li>
+           </ul>
+        </div>
+        <div class="bc">
+           <h3>成功案例</h3>
+           <a href="javascript:;"><img class="yi" src="image/sanjiao.gif" alt="" title=""></a>
+           <ul class="clearfix">
+              <li><img src="image/tuyi.gif" alt="" title=""><br><a href="javascript:;">尼龙拉链</a></li>
+              <li><img src="image/tuer.gif" alt="" title=""><br><a href="javascript:;">尼龙拉链</a></li>
+              <li><img src="image/tusan.gif" alt="" title=""><br><a href="javascript:;">尼龙拉链</a></li>
+              <li><img src="image/tusi.gif" alt="" title=""><br><a href="javascript:;">尼龙拉链</a></li>
+           </ul>
+           <a href="javascript:;"><img class="er" src="image/sanjiao..gif" alt="" title=""></a>
+        </div>
+    </div> 
+    
+    <div class="c"> 
+        <img src="image/zhanshi.gif" alt="" title="">
+       <div class="cc">    
+        <ul class="clearfix">
+              <li><span><</span><a href="javascript:;">尼龙拉链</a></li>
+              <li><span><</span><a href="javascript:;">金属拉链</a></li>
+              <li><span><</span><a href="javascript:;">树脂拉链</a></li>
+              <li><span><</span><a href="javascript:;">无码拉链</a></li>
+              <li><span><</span><a href="javascript:;">打码拉链</a></li>
+              <li><span><</span><a href="javascript:;">工字文拉链</a></li>
+              <li><span><</span><a href="javascript:;">人字纹拉链</a></li>
+              <li><span><</span><a href="javascript:;">塑料拉头</a></li>
+              <li><span><</span><a href="javascript:;">金属拉头</a></li>
+              <li></li>
+           </ul>
+           
+          </div>
+         
+        <a href="javascript:;"><img class="tuwu" src="image/tuwu.png" alt="" title=""></a>
+        <a href="javascript:;"><img class="tuliu" src="image/tuliu.png" alt="" title=""></a>
+        <a href="javascript:;"><img class="tuliu" src="image/tuliu.png" alt="" title=""></a>
+        <a href="javascript:;"><img class="tuliu" src="image/tuliu.png" alt="" title=""></a>
+        <a href="javascript:;"><img class="tuliu" src="image/tuliu.png" alt="" title=""></a>
+       
+    </div>
+  </div>
+  
+  <h3 class="yq gwidth">
+     <span>友情链接</span>：容城县鑫昌发拉链有限公司
+  </h3>
+  
+ <div class="dii">
+  <div class="di">
+   <ul>
+     <li><a href="index.html">网站首页</a></li>
+     <li><a href="about.html">关于我们</a></li>
+     <li><a href="news.html">新闻资讯</a></li>
+     <li><a href="product.html">产品展示</a></li>
+     <li><a href="succes.html">成功案例</a></li>
+     <li><a href="honor.html">资质荣誉</a></li>
+     <li><a href="message.html">请您留言</a></li>
+     <li><a href="contact us.html">联系我们</a></li>
+   </ul>
+  </div>
+ </div> 
+ 
+  <div class="f gwidth">
+    版权所有：容城县鑫昌发拉链有限公司　　技术支持：小象科技　　ICP备案编号： 正在进行备案
+    </div>
+</div>
+</body>
+</html>
